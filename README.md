@@ -9,7 +9,7 @@
   <a href="https://android.com"><img src="https://img.shields.io/badge/Android-13.0%20--%2016-3DDC84.svg" alt="Android Support"/></a>
   <a href="https://github.com/compose-miuix-ui/miuix"><img src="https://img.shields.io/badge/UI--Framework-Miuix--Compose-0084FF.svg" alt="Miuix UI"/></a>
   <a href="https://github.com/libxposed/api"><img src="https://img.shields.io/badge/Hook--Framework-libxposed%20102-purple.svg" alt="libxposed"/></a>
-  <a href="https://github.com/limczhh/HyperLyric/releases"><img src="https://img.shields.io/github/downloads/limczhh/HyperLyric/total?style=flat&color=orange" alt="Downloads"/></a>
+  <a href="https://github.com/Xposed-Modules-Repo/com.lidesheng.hyperlyric/releases"><img src="https://img.shields.io/github/downloads/Xposed-Modules-Repo/com.lidesheng.hyperlyric/total?style=flat&color=orange" alt="Downloads"/></a>
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 
 ---
 
-HyperLyric 是一款专为小米 HyperOS 设计的歌词显示工具。支持两种运行方式：以 **Xposed 模块** 注入 SystemUI 超级岛，提供逐字动态歌词；或作为 **独立应用** 通过通知栏/焦点通知显示歌词，无需 Root。
+HyperLyric 是一款专为小米 HyperOS 设计的歌词显示工具。支持两种运行方式：以 **Xposed 模块** 注入 SystemUI 超级岛，提供逐字动态歌词；或作为 **独立应用** 通过通知栏显示歌词。
 
 ---
 
@@ -60,8 +60,8 @@ HyperLyric 是一款专为小米 HyperOS 设计的歌词显示工具。支持两
 
 | 歌词源 | 原理 | 适用播放器 | 依赖 |
 | :--- | :--- | :--- | :--- |
-| **Lyricon** (`lyricon`) | 读取词幕状态栏歌词模块转发的歌词数据。 | 网易云音乐、QQ音乐、酷狗等 | 需安装 [Lyricon central](https://github.com/tomakino/lyricon/releases/tag/core) 及对应 [LyricProvider](https://github.com/proify/LyricProvider/releases) |
-| **SuperLyric** (`superlyric`) | 获取 SuperLyric 的逐字时间戳歌词。 | 酷我音乐、QQ音乐、汽水音乐等 | 需安装 [SuperLyric](https://github.com/HChenX/SuperLyric) 并开启广播 |
+| **Lyricon** (`lyricon`) | 读取词幕状态栏歌词模块转发的歌词数据。 | 网易云音乐、QQ音乐、酷狗等 | 需安装 [Lyricon central](https://github.com/tomakino/lyricon/releases) 并开启"导出"。 |
+| **SuperLyric** (`superlyric`) | 获取 SuperLyric 的逐字时间戳歌词。 | 酷我音乐、QQ音乐、汽水音乐等 | 需安装 [SuperLyric](https://github.com/HChenX/SuperLyric) 并开启导出。 |
 | **LyricInfo** (`lyricinfo`) | 读取 MediaSession 中的 lyricinfo 字段。 | QQ音乐、Salt Player 等 | 建议安装 [LyricInfo](https://github.com/limczhh/LyricInfo)（可选） |
 
 ---

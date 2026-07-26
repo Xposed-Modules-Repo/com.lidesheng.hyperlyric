@@ -9,7 +9,7 @@
   <a href="https://android.com"><img src="https://img.shields.io/badge/Android-13.0%20--%2016-3DDC84.svg" alt="Android Support"/></a>
   <a href="https://github.com/compose-miuix-ui/miuix"><img src="https://img.shields.io/badge/UI--Framework-Miuix--Compose-0084FF.svg" alt="Miuix UI"/></a>
   <a href="https://github.com/libxposed/api"><img src="https://img.shields.io/badge/Hook--Framework-libxposed%20102-purple.svg" alt="libxposed"/></a>
-  <a href="https://github.com/limczhh/HyperLyric/releases"><img src="https://img.shields.io/github/downloads/limczhh/HyperLyric/total?style=flat&color=orange" alt="Downloads"/></a>
+  <a href="https://github.com/Xposed-Modules-Repo/com.lidesheng.hyperlyric/releases"><img src="https://img.shields.io/github/downloads/Xposed-Modules-Repo/com.lidesheng.hyperlyric/total?style=flat&color=orange" alt="Downloads"/></a>
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 
 ---
 
-HyperLyric is a lyric display tool designed for Xiaomi HyperOS. It supports two modes: as an **Xposed module** injecting into SystemUI HyperIsland for word-by-word dynamic lyrics, or as a **standalone app** displaying lyrics via notification bar / Notification Spotlight — no root required.
+HyperLyric is a lyric display tool designed for Xiaomi HyperOS. It supports two modes: as an **Xposed module** injecting into SystemUI HyperIsland for word-by-word dynamic lyrics, or as a **standalone app** displaying lyrics through the notification bar.
 
 ---
 
@@ -60,8 +60,8 @@ Lyric sources are decoupled from HyperLyric. All sources are dispatched through 
 
 | Source | How It Works | Compatible Players | Dependencies |
 | :--- | :--- | :--- | :--- |
-| **Lyricon** (`lyricon`) | Reads lyric data forwarded by the Lyricon status bar module. | NetEase Cloud Music, QQ Music, Kugou, etc. | Requires [Lyricon central](https://github.com/tomakino/lyricon/releases/tag/core) and [LyricProvider](https://github.com/proify/LyricProvider/releases) |
-| **SuperLyric** (`superlyric`) | Retrieves word-level timestamped lyrics from SuperLyric. | Kuwo, QQ Music, Qishui, etc. | Requires [SuperLyric](https://github.com/HChenX/SuperLyric) with broadcast enabled |
+| **Lyricon** (`lyricon`) | Reads lyric data forwarded by the Lyricon status bar module. | NetEase Cloud Music, QQ Music, Kugou, etc. | Requires [Lyricon central](https://github.com/tomakino/lyricon/releases) with "export" enabled. |
+| **SuperLyric** (`superlyric`) | Retrieves word-level timestamped lyrics from SuperLyric. | Kuwo, QQ Music, Qishui, etc. | Requires [SuperLyric](https://github.com/HChenX/SuperLyric) with broadcast enabled. |
 | **LyricInfo** (`lyricinfo`) | Reads the lyricinfo field from MediaSession. | QQ Music, Salt Player, etc. | [LyricInfo](https://github.com/limczhh/LyricInfo) recommended (optional) |
 
 ---
